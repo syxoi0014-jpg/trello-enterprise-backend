@@ -42,6 +42,6 @@ public class TaskService {
 
     // 4. Удалить задачу
     public void deleteTask(Long id) {
-        taskRepository.deleteById(id);
-    }
+    taskRepository.deleteById(id); // Удаляем только ту задачу, ID которой передали
+}
 }
